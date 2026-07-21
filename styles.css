@@ -848,63 +848,38 @@ dialog[open]{animation:dialogIn .24s ease both}
 @media(prefers-reduced-motion:reduce){
   .menu-toggle span,.site-header nav{transition:none}
 }
+@media (max-width: 800px) {
 
-
-/* Mobile text overflow fix */
-@media(max-width:520px){
-  .about h2,
-  .hero h1{
-    max-width:100%;
-    overflow-wrap:break-word;
-    word-break:normal;
-  }
-
-  .about-text,
-  .hero-lead{
-    max-width:100%;
-    overflow-wrap:break-word;
-  }
-
-  .about,
-  .hero{
-    overflow-x:hidden;
-  }
-}
-@media(max-width:520px){
-
-  html, body {
-    overflow-x: hidden;
+  .hero {
+    display: block;
     width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
   }
 
-  .hero,
-  .about {
-    width: calc(100% - 32px);
+  .hero-copy {
+    width: 100%;
     max-width: 100%;
-    overflow: hidden;
   }
 
   .hero h1 {
     width: 100%;
     max-width: 100%;
-    font-size: 52px;
-    line-height: 0.95;
-    letter-spacing: -0.045em;
-    overflow-wrap: break-word;
-    word-break: normal;
+    font-size: 56px;
+    line-height: 0.9;
+    letter-spacing: -0.06em;
   }
 
-  .hero h1 span,
   .hero h1 .hero-first-name,
   .hero h1 .hero-last-name {
-    display: block;
-    max-width: 100%;
+    white-space: normal;
   }
 
-  .hero-lead,
-  .about-text {
-    max-width: 100%;
+  .hero-lead {
     width: 100%;
-    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 16px;
   }
+
 }
