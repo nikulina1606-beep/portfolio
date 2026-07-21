@@ -870,3 +870,41 @@ dialog[open]{animation:dialogIn .24s ease both}
     overflow-x:hidden;
   }
 }
+@media(max-width:520px){
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .hero,
+  .about {
+    width: calc(100% - 32px);
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 52px;
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .hero h1 span,
+  .hero h1 .hero-first-name,
+  .hero h1 .hero-last-name {
+    display: block;
+    max-width: 100%;
+  }
+
+  .hero-lead,
+  .about-text {
+    max-width: 100%;
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+}
