@@ -877,23 +877,3 @@ dialog[open]{animation:dialogIn .24s ease both}
 @media(prefers-reduced-motion:reduce){
   .menu-toggle span,.site-header nav{transition:none}
 }
-/* Mobile text overflow fix */
-@media(max-width:520px){
-  .about h2,
-  .hero h1{
-    max-width:100%;
-    overflow-wrap:break-word;
-    word-break:normal;
-  }
-
-  .about-text,
-  .hero-lead{
-    max-width:100%;
-    overflow-wrap:break-word;
-  }
-
-  .about,
-  .hero{
-    overflow-x:hidden;
-  }
-}
