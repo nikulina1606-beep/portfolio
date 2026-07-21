@@ -848,38 +848,3 @@ dialog[open]{animation:dialogIn .24s ease both}
 @media(prefers-reduced-motion:reduce){
   .menu-toggle span,.site-header nav{transition:none}
 }
-@media (max-width: 800px) {
-
-  .hero {
-    display: block;
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    overflow: hidden;
-  }
-
-  .hero-copy {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    width: 100%;
-    max-width: 100%;
-    font-size: 56px;
-    line-height: 0.9;
-    letter-spacing: -0.06em;
-  }
-
-  .hero h1 .hero-first-name,
-  .hero h1 .hero-last-name {
-    white-space: normal;
-  }
-
-  .hero-lead {
-    width: 100%;
-    max-width: 100%;
-    font-size: 16px;
-  }
-
-}
