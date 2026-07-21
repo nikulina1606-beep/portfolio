@@ -848,3 +848,85 @@ dialog[open]{animation:dialogIn .24s ease both}
 @media(prefers-reduced-motion:reduce){
   .menu-toggle span,.site-header nav{transition:none}
 }
+/* FINAL MOBILE FIX */
+@media (max-width: 800px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 16px 60px;
+    gap: 40px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    margin: 25px 0;
+    font-size: clamp(48px, 14vw, 72px);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+    overflow-wrap: anywhere;
+  }
+
+  .hero h1 span,
+  .hero-first-name,
+  .hero-last-name {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-role {
+    width: 100%;
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .hero-lead {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .portrait-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .portrait-wrap img {
+    width: 100%;
+    height: auto;
+  }
+
+}
