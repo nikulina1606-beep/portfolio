@@ -714,10 +714,39 @@ dialog[open]{animation:dialogIn .24s ease both}
 }
 
 @media(max-width:520px){
-  .hero{width:calc(100% - 32px)}
-  .hero h1{font-size:clamp(54px,18.5vw,78px)}
-  .portrait-wrap img{border-radius:180px 180px 24px 24px}
-  .portrait-label{right:-4px;bottom:24px;padding:9px 13px}
+  .hero{
+    width:calc(100% - 32px);
+    padding-block:44px 64px;
+  }
+
+  .hero h1{
+    font-size:clamp(42px,12vw,58px);
+    line-height:1;
+    letter-spacing:-.05em;
+    max-width:100%;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+
+  .hero h1 span{
+    display:block;
+    max-width:100%;
+  }
+
+  .hero-lead{
+    max-width:100%;
+    font-size:16px;
+  }
+
+  .portrait-wrap img{
+    border-radius:180px 180px 24px 24px;
+  }
+
+  .portrait-label{
+    right:-4px;
+    bottom:24px;
+    padding:9px 13px;
+  }
 }
 
 .proposal img{
