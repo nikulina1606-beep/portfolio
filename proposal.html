@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07131f" />
+  <meta name="description" content="Коммерческое предложение SkinX × DocMa" />
+  <title>SkinX × DocMa — коммерческое предложение</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#f7f8fa;--muted:#9aa8b3;--dark:#07131f;--line:#243443;--aqua:#57d3cc;--page:#101d29}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--dark);color:var(--ink);font-family:Onest,Arial,sans-serif}
+    a{color:inherit}
+    .toolbar{position:sticky;z-index:10;top:0;display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;min-height:76px;padding:14px max(20px,calc((100vw - 1320px)/2));border-bottom:1px solid rgba(255,255,255,.12);background:rgba(7,19,31,.9);backdrop-filter:blur(18px)}
+    .toolbar a{text-decoration:none}
+    .back{justify-self:start;color:#dfe6eb;font-size:14px}
+    .title{text-align:center}
+    .title strong{display:block;font-size:14px}.title span{display:block;margin-top:3px;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .download{justify-self:end;padding:11px 16px;border:1px solid var(--aqua);border-radius:999px;color:var(--aqua);font-size:13px;font-weight:600;transition:background-color .2s ease,color .2s ease}
+    .download:hover{background:var(--aqua);color:var(--dark)}
+    main{width:min(1320px,calc(100% - 40px));margin:0 auto;padding:54px 0 90px}
+    .intro{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+    .intro h1{max-width:760px;margin:0;font-size:clamp(34px,5vw,68px);line-height:1;letter-spacing:-.045em}
+    .intro p{max-width:360px;margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+    .pages{display:grid;gap:30px}
+    figure{margin:0;padding:10px;border:1px solid var(--line);border-radius:20px;background:var(--page);box-shadow:0 24px 70px rgba(0,0,0,.24)}
+    figure img{display:block;width:100%;height:auto;border-radius:12px;background:#fff}
+    figcaption{padding:12px 4px 2px;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+    .fallback{margin-top:30px;padding:22px;border:1px solid var(--line);border-radius:16px;color:var(--muted);text-align:center}
+    .fallback a{color:var(--aqua)}
+    @media(max-width:760px){
+      .toolbar{grid-template-columns:1fr auto;min-height:66px}.title{display:none}.download{padding:10px 13px}
+      main{width:calc(100% - 24px);padding-top:34px}.intro{align-items:start;flex-direction:column}.intro h1{font-size:clamp(34px,10vw,52px)}
+      .pages{gap:16px}figure{padding:6px;border-radius:13px}figure img{border-radius:8px}
+    }
+    @media print{.toolbar,.intro,.fallback,figcaption{display:none}body{background:#fff}.pages{gap:0}main{width:100%;padding:0}figure{break-after:page;padding:0;border:0;border-radius:0;box-shadow:none}figure img{border-radius:0}}
+  </style>
+</head>
+<body>
+  <header class="toolbar">
+    <a class="back" href="index.html#projects">← Вернуться к портфолио</a>
+    <div class="title"><strong>SkinX × DocMa</strong><span>Коммерческое предложение · 10 страниц</span></div>
+    <a class="download" href="assets/docs/skinx-docma-commercial-proposal.pdf" download>Скачать PDF ↓</a>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Коммерческое предложение SkinX × DocMa</h1>
+      <p>Документ открыт прямо внутри сайта. Можно спокойно пролистать все страницы или скачать оригинальный PDF.</p>
+    </div>
+    <div class="pages" aria-label="Страницы коммерческого предложения">
+      <figure><img src="assets/docs/proposal-pages/page-01.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 1"><figcaption>01 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-02.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 2"><figcaption>02 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-03.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 3"><figcaption>03 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-04.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 4"><figcaption>04 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-05.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 5"><figcaption>05 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-06.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 6"><figcaption>06 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-07.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 7"><figcaption>07 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-08.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 8"><figcaption>08 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-09.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 9"><figcaption>09 / 10</figcaption></figure>
+      <figure><img loading="lazy" src="assets/docs/proposal-pages/page-10.jpg" alt="Коммерческое предложение SkinX × DocMa, страница 10"><figcaption>10 / 10</figcaption></figure>
+    </div>
+    <p class="fallback">Нужен исходный документ? <a href="assets/docs/skinx-docma-commercial-proposal.pdf" download>Скачать PDF</a></p>
+  </main>
+</body>
+</html>
