@@ -24,7 +24,7 @@
 @media(max-width:800px){.section{width:min(100% - 28px,var(--max))}.site-header nav{display:none}.hero{grid-template-columns:1fr;padding-block:42px}.hero-copy{order:1}.hero-visual{order:0}.portrait-wrap img{max-height:56vh;width:100%;border-radius:180px 180px 20px 20px}.hero h1{font-size:66px}.about,.case-heading,.case-grid,.product-flow,.proposal,.research-layout{grid-template-columns:1fr}.about{gap:24px}.stats,.results-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr)}.video-grid,.skills-grid,.contact-grid,.insight-grid{grid-template-columns:1fr}.case-heading{gap:15px}.case-summary{font-size:17px}.case-cover img{height:55vh}.section-title-row{align-items:start;flex-direction:column}.research-quote{font-size:48px}.contact-grid a{font-size:18px}}
 @media(max-width:480px){.hero h1{font-size:54px}.stats,.results-grid,.process-grid{grid-template-columns:1fr}.hero-actions .button{width:100%;justify-content:center}.gallery{grid-template-columns:1fr 1fr}.case-card{padding:24px}.case-heading h2{font-size:43px}}
 
-/* Header, hero and key results вЂ” 2026 redesign */
+/* Header, hero and key results — 2026 redesign */
 .site-header{
   min-height:80px;
   padding:0 max(24px,calc((100vw - var(--portfolio-max))/2));
@@ -488,7 +488,7 @@ a:focus-visible,button:focus-visible,video:focus-visible{outline:2px solid #9fb0
 .skills-grid>div:hover,.insight-grid>div:hover,.results-grid>div:hover,.case-card:hover{transform:translateY(-4px)}
 .contact-lead{max-width:650px;color:#5d5b57;font-size:18px}
 .contact-grid a{position:relative;transition:padding-left .25s ease,color .25s ease}
-.contact-grid a::after{content:"в†—";position:absolute;right:8px;top:32px;opacity:0;transform:translate(-8px,8px);transition:opacity .2s ease,transform .2s ease}
+.contact-grid a::after{content:"↗";position:absolute;right:8px;top:32px;opacity:0;transform:translate(-8px,8px);transition:opacity .2s ease,transform .2s ease}
 .contact-grid a:hover{padding-left:18px;color:var(--portfolio-blue)}
 .contact-grid a:hover::after{opacity:1;transform:none}
 
@@ -554,7 +554,7 @@ dialog[open]{animation:dialogIn .24s ease both}
   dialog[open]{animation:none}
 }
 
-/* First screen вЂ” matched to the softer editorial direction from the reference */
+/* First screen — matched to the softer editorial direction from the reference */
 .site-header{
   background:rgba(243,240,233,.9);
   color:var(--ink);
@@ -731,13 +731,13 @@ dialog[open]{animation:dialogIn .24s ease both}
 .proposal-links .text-link{margin-top:0}
 .proposal-links .text-link-muted{color:#858c9a}
 
-/* РќРѕРІР°СЏ РІРµСЂС‚РёРєР°Р»СЊРЅР°СЏ СЃРµСЂРёСЏ SkinX РїРѕРєР°Р·С‹РІР°РµС‚СЃСЏ С†РµР»РёРєРѕРј, Р±РµР· РєРІР°РґСЂР°С‚РЅРѕР№ РѕР±СЂРµР·РєРё. */
+/* Новая вертикальная серия SkinX показывается целиком, без квадратной обрезки. */
 .gallery-item img{
   aspect-ratio:2/3;
   object-fit:cover;
 }
 
-/* РџРѕР»РЅРѕС†РµРЅРЅР°СЏ РјРѕР±РёР»СЊРЅР°СЏ РЅР°РІРёРіР°С†РёСЏ. */
+/* Полноценная мобильная навигация. */
 .menu-toggle{
   display:none;
   width:46px;
@@ -817,7 +817,7 @@ dialog[open]{animation:dialogIn .24s ease both}
   }
 
   .site-header nav a::after{
-    content:"в†—";
+    content:"↗";
     position:static;
     width:auto;
     height:auto;
@@ -848,85 +848,25 @@ dialog[open]{animation:dialogIn .24s ease both}
 @media(prefers-reduced-motion:reduce){
   .menu-toggle span,.site-header nav{transition:none}
 }
-/* FINAL MOBILE FIX */
-@media (max-width: 800px) {
 
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+
+/* Mobile text overflow fix */
+@media(max-width:520px){
+  .about h2,
+  .hero h1{
+    max-width:100%;
+    overflow-wrap:break-word;
+    word-break:normal;
   }
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    padding: 40px 16px 60px;
-    gap: 40px;
+  .about-text,
+  .hero-lead{
+    max-width:100%;
+    overflow-wrap:break-word;
   }
 
-  .hero-copy {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
+  .about,
+  .hero{
+    overflow-x:hidden;
   }
-
-  .hero h1 {
-    width: 100%;
-    max-width: 100%;
-    margin: 25px 0;
-    font-size: clamp(48px, 14vw, 72px);
-    line-height: 0.92;
-    letter-spacing: -0.055em;
-    overflow-wrap: anywhere;
-  }
-
-  .hero h1 span,
-  .hero-first-name,
-  .hero-last-name {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .hero-role {
-    width: 100%;
-    max-width: 100%;
-    font-size: 17px;
-  }
-
-  .hero-lead {
-    width: 100%;
-    max-width: 100%;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .hero-actions {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero-actions .button {
-    width: 100%;
-  }
-
-  .hero-visual {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .portrait-wrap {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .portrait-wrap img {
-    width: 100%;
-    height: auto;
-  }
-
 }
